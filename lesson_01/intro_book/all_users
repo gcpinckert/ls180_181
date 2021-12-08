@@ -1,0 +1,214 @@
+\du
+\conninfo
+\list
+\q
+\q
+\conninfo
+\q
+\list
+\q
+SELECT * FROM orders;
+\q
+SELECT * FROM orders;
+SELECT side FROM orders;
+SELECT drink, side FROM orders;
+SELECT * FROM orders WHERE id = 1;
+SELECT customer_name FROM orders WHERE side = 'Fries';
+SELECT customer_name FROM orders;
+SELECT * FROM orders WHEN drink = 'Chocolate Shake';
+SELECT * FROM orders WHERE drink = 'Chocolate Shake';
+SELECT * FROM orders WHERE id = 2;
+SELECT burger, side, drink FROM orders WHERE id = 2;
+SELECT customer_name FROM orders WHERE side = "Onion Rings";
+SELECT customer_name FROM orders WHERE side = 'Onion Rings';
+\q
+\list
+CREATE DATABASE anothter_database;
+\list
+\c anothter_database
+\c sql_book
+DROP DATABASE anothter_database;
+\list
+\q
+CREATE DATABASE database_two;
+\c database_two
+\l
+\c database_one
+DROP DATABASE database_two;
+\q
+\list
+\q
+\q
+\l
+\c sql_book
+\e
+\E
+\e
+CREATE TABLE users (
+  id serial UNIQUE NOT NULL,
+  username char(25),
+  enabled boolean DEFAULT TRUE
+);
+SELECT * FROM users;
+\dt
+\d users
+\q
+\l
+\c encyclopedia
+\e
+\e
+
+CREATE TABLE countries (
+  id serial,
+  name varchar(50) UNIQUE NOT NULL,
+  capital varchar(50) NOT NULL,
+  population integer
+);
+SELECT * FROM countries;
+\d countries
+\e
+CREATE TABLE famous_people (
+  id serial,
+  name varchar(100) NOT NULL,
+  occupation varchar(150),
+  date_of_birth varchar(50),
+  deceased boolean DEFAULT false
+);
+\d famous_people
+\e
+CREATE TABLE animals (
+  id serial,
+  name varchar(100),
+  binomial_name varchar(100),
+  max_weight_kg decimal(8, 3) CHECK (max_weight>=0.001) CHECK(max_weight<=40000),
+  max_age_years integer,
+  conservation_status char(2)
+);
+\e
+CREATE TABLE animals (
+  id serial,
+  name varchar(100),
+  binomial_name varchar(100),
+  max_weight_kg decimal(8, 3) CHECK (max_weight_kg>=0.001) CHECK(max_weight_kg<=40000),
+  max_age_years integer,
+  conservation_status char(2)
+);
+\d animals
+\dt
+\e
+ALTER TABLE animals
+ALTER COLUMN name varchar(100) NOT NULL;
+\d animals
+ALTER TABLE animals
+ALTER COLUMN name varchar(100) NOT NULL;
+ALTER TABLE animals
+ALTER COLUMN name NOT NULL;
+CREATE DATABASE ls_burger;
+\l
+\c ls_burger
+\e
+CREATE TABLE (
+  id serial,
+  customer_name varchar(50) NOT NULL,
+  burger varchar(50),
+  side varchar(50),
+  drink varchar(50),
+  order_total decimal(5, 2) NOT NULL,
+);
+\dt
+\e
+CREATE TABLE orders (
+  id serial,
+  customer_name varchar(50) NOT NULL,
+  burger varchar(50),
+  side varchar(50),
+  drink varchar(50),
+  order_total decimal(5, 2) NOT NULL,
+);
+\dt
+\e
+CREATE TABLE orders (
+  id serial,
+  customer_name varchar(50) NOT NULL,
+  burger varchar(50),
+  side varchar(50),
+  drink varchar(50),
+  order_total decimal(5, 2) NOT NULL,
+);
+\dt
+\e
+CREATE TABLE orders (
+  id serial,
+  customer_name varchar(50) NOT NULL,
+  burger varchar(50),
+  side varchar(50),
+  drink varchar(50),
+  order_total decimal(5,2) NOT NULL,
+);
+\e
+\dt
+CREATE TABLE orders (
+  id serial,
+  customer_name varchar(50) NOT NULL,
+  burger varchar(50),
+  side varchar(50),
+  drink varchar(50),
+  order_total decimal(5,2) NOT NULL,
+);
+\e
+CREATE TABLE orders (
+  id serial,
+  customer_name varchar(50) NOT NULL,
+  burger varchar(50),
+  side varchar(50),
+  drink varchar(50),
+  order_total decimal(5,2) NOT NULL
+);
+\dt
+ALTER TABLE users
+RENAME TO all_users;
+\dt
+\l
+\c sql_book
+\l
+\dt
+ALTER TABLE users
+RENAME TO all_users;
+\d all_users
+ALTER TABLE all_users
+RENAME COLUMN username TO full_name;
+\d all_users
+ALTER TABLE all_users
+ALTER COLUMN full_name TYPE varchar(25);
+\d all_users
+ALTER TABLE all_users
+ALTER COLUMN full_name
+SET NOT NULL;
+\l
+\c encyclopedia
+\dt
+\d animals
+ALTER TABLE animals
+ALTER COLUMN name
+SET NOT NULL;
+ALTER TABLE animals
+ALTER COLUMN binomial_name
+SET NOT NULL;
+\d animals
+\l
+\c sql_book
+\dt
+\d all_users
+ALTER TABLE all_users
+ALTER COLUMN id
+DROP DEFAULT;
+\d all_users
+ALTER TABLE all_users
+ADD COLUMN last_login timestamp
+NOT NULL
+DEFAULT NOW();
+\d all_users
+ALTER TABLE all_users DROP COLUMN enabled;
+\d all_users
+DROP TABLE all_users;
+\s all_users
