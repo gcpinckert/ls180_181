@@ -6,6 +6,13 @@ How to think about data in a relational way, and how to interact with relational
 
 ### SQL
 
+- [SQL Facts](./study_guide/sql.md)
+  - [General Characteristics](./study_guide/sql.md#general-characteristics)
+  - [Syntax](./study_guide/sql.md#syntax)
+  - [Sublanguages](./study_guide/sql.md#sublanguages)
+    - [DDL](./study_guide/sql.md#ddl)
+    - [DML](./study_guide/sql.md#dml)
+    - [DCL](./study_guide/sql.md#dcl)
 - [JOINs](./study_guide/joins.md)
   - [What are JOINs?](./study_guide/joins.md#what-are-sql-joins)
   - [Aliasing](./study_guide/joins.md#aliasing)
@@ -15,7 +22,9 @@ How to think about data in a relational way, and how to interact with relational
     - [Right Outer Joins](./study_guide/joins.md#right-outer-joins)
     - [Full Joins](./study_guide/joins.md#full-joins)
     - [Cross Joins](./study_guide/joins.md)
-- [ ] Name and define the three sublanguages of SQL and be able to classify different statements by sublanguage
+
+To Do:
+
 - [ ] Write SQL statements using `INSERT`, `UPDATE`, `DELETE`, `CREATE`/`ALTER`/`DROP TABLE`, `ADD`/`ALTER`/`DROP COLUMN`.
 - [ ] Understand how to use `GROUP BY`, `ORDER BY`, `WHERE`, and `HAVING`
 - [ ] Understand how to create and remove constraints, including `CHECK` constraints.
