@@ -6,7 +6,15 @@ How to think about data in a relational way, and how to interact with relational
 
 ### SQL
 
-- [ ] Identify the different types of `JOIN`s and explain their differences
+- [JOINs](./study_guide/joins.md)
+  - [What are JOINs?](./study_guide/joins.md#what-are-sql-joins)
+  - [Aliasing](./study_guide/joins.md#aliasing)
+  - [Types of JOINs](./study_guide/joins.md#types-of-joins)
+    - [Inner Joins](./study_guide/joins.md#inner-joins)
+    - [Left Outer Joins](./study_guide/joins.md#left-outer-joins)
+    - [Right Outer Joins](./study_guide/joins.md#right-outer-joins)
+    - [Full Joins](./study_guide/joins.md#full-joins)
+    - [Cross Joins](./study_guide/joins.md)
 - [ ] Name and define the three sublanguages of SQL and be able to classify different statements by sublanguage
 - [ ] Write SQL statements using `INSERT`, `UPDATE`, `DELETE`, `CREATE`/`ALTER`/`DROP TABLE`, `ADD`/`ALTER`/`DROP COLUMN`.
 - [ ] Understand how to use `GROUP BY`, `ORDER BY`, `WHERE`, and `HAVING`
