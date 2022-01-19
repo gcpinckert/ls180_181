@@ -13,6 +13,19 @@ How to think about data in a relational way, and how to interact with relational
     - [DDL](./study_guide/sql.md#ddl)
     - [DML](./study_guide/sql.md#dml)
     - [DCL](./study_guide/sql.md#dcl)
+- [Example SQL Statements](./study_guide/sql_statements.md)
+  - [CREATE](./study_guide/sql_statements.md#create)
+  - [ALTER](./study_guide/sql_statements.md#alter)
+  - [DROP](./study_guide/sql_statements.md#drop)
+  - [INSERT](./study_guide/sql_statements.md#insert)
+  - [SELECT](./study_guide/sql_statements.md#select)
+    - [WHERE](./study_guide/sql_statements.md#where)
+    - [GROUP BY](./study_guide/sql_statements.md#group-by)
+    - [HAVING](./study_guide/sql_statements.md#having)
+    - [ORDER BY](./study_guide/sql_statements.md#order-by)
+    - [LIMIT and OFFSET](./study_guide/sql_statements.md#limit-and-offset)
+  - [UPDATE](./study_guide/sql_statements.md#update)
+  - [DELETE](./study_guide/sql_statements.md#delete)
 - [JOINs](./study_guide/joins.md)
   - [What are JOINs?](./study_guide/joins.md#what-are-sql-joins)
   - [Aliasing](./study_guide/joins.md#aliasing)
@@ -25,8 +38,6 @@ How to think about data in a relational way, and how to interact with relational
 
 To Do:
 
-- [ ] Write SQL statements using `INSERT`, `UPDATE`, `DELETE`, `CREATE`/`ALTER`/`DROP TABLE`, `ADD`/`ALTER`/`DROP COLUMN`.
-- [ ] Understand how to use `GROUP BY`, `ORDER BY`, `WHERE`, and `HAVING`
 - [ ] Understand how to create and remove constraints, including `CHECK` constraints.
 - [ ] Be familiar with using subqueries
 
