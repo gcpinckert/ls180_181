@@ -16,6 +16,7 @@ How to think about data in a relational way, and how to interact with relational
 - [Example SQL Statements](./study_guide/sql_statements.md)
   - [CREATE](./study_guide/sql_statements.md#create)
   - [ALTER](./study_guide/sql_statements.md#alter)
+    - [Adding and Removing Constraints](./study_guide/sql_statements.md#adding-and-removing-constraints)
   - [DROP](./study_guide/sql_statements.md#drop)
   - [INSERT](./study_guide/sql_statements.md#insert)
   - [SELECT](./study_guide/sql_statements.md#select)
@@ -38,7 +39,6 @@ How to think about data in a relational way, and how to interact with relational
 
 To Do:
 
-- [ ] Understand how to create and remove constraints, including `CHECK` constraints.
 - [ ] Be familiar with using subqueries
 
 ### PostgreSQL

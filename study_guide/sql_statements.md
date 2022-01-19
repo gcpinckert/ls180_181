@@ -117,7 +117,35 @@ ALTER TABLE storage_units
   CHECK (unit_number SIMILAR TO '[A-Z][0-9]{3}');
 ```
 
+### Adding and Removing Constraints
+
 Note the difference in how the `CHECK`, `UNIQUE` and `NOT NULL` constraints are added above. This is because table constraints (as in the case of `CHECK`) and column constraints (as in the case of `NOT NULL`) have different forms of the `ALTER TABLE` command. For the most part, if you are adding constraints to an existing table, anything other than `NOT NULL` will have to be added as a table constraint, although the `CHECK` constraint above _could_ have been added as a column constraint in the `CREATE TABLE` statement.
+
+Here are some examples of how to add and remove different kinds of constraints:
+
+```sql
+-- Add NOT NULL
+ALTER TABLE table_name
+  ALTER COLUMN column_name SET NOT NULL;
+
+-- Remove NOT NULL
+ALTER TABLE table_name
+  ALTER COLUMN column_name DROP NOT NULL;
+
+-- Add a UNIQUE constraint for a given column
+ALTER TABLE table_name
+  ADD UNIQUE (column_name);
+-- A constraint name will be automatically generated if not provided
+
+-- Add a CHECK constraint for a given column
+ALTER TABLE table_name
+  ADD CHECK (conditional_expression_includ_column_name);
+
+-- Remove a table constraint (such as UNIQUE or CHECK)
+ALTER TABLE table_name
+  DROP CONSTRAINT constraint_name;
+-- If you didn't provide a name, you can look up what was generated with \d table_name in psql
+```
 
 ## DROP
 
