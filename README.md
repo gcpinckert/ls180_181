@@ -36,10 +36,17 @@ How to think about data in a relational way, and how to interact with relational
     - [Right Outer Joins](./study_guide/joins.md#right-outer-joins)
     - [Full Joins](./study_guide/joins.md#full-joins)
     - [Cross Joins](./study_guide/joins.md)
+- [Subqueries](./study_guide/subqueries.md)
+  - [What are subqueries?](./study_guide/subqueries.md#what-are-subqueries)
+  - [General Syntax](./study_guide/subqueries.md#general-syntax)
+  - [Subquery Expressions](./study_guide/subqueries.md#subquery-expression-examples)
+    - [IN](./study_guide/subqueries.md#in)
+    - [NOT IN](./study_guide/subqueries.md#not-in)
+    - [ANY and SOME](./study_guide/subqueries.md#any-and-some)
+    - [ALL](./study_guide/subqueries.md#all)
+    - [EXISTS](./study_guide/subqueries.md#exists)
 
 To Do:
-
-- [ ] Be familiar with using subqueries
 
 ### PostgreSQL
 
