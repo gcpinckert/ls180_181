@@ -139,7 +139,7 @@ ALTER TABLE table_name
 
 -- Add a CHECK constraint for a given column
 ALTER TABLE table_name
-  ADD CHECK (conditional_expression_includ_column_name);
+  ADD CHECK (conditional_expression_include_column_name);
 
 -- Remove a table constraint (such as UNIQUE or CHECK)
 ALTER TABLE table_name

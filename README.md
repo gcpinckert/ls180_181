@@ -51,6 +51,11 @@ To Do:
 ### PostgreSQL
 
 - [Sequences](./study_guide/sequences.md)
+- [PostgreSQL Examples](./study_guide/psql_examples.md)
+  - [PostgreSQL query process](./study_guide/psql_examples.md#how-does-postgresql-process-a-query)
+  - [Auto-incrementing columns](./study_guide/psql_examples.md#make-an-autoincrementing-column)
+  - [Default column values](./study_guide/psql_examples.md#define-a-default-value-for-a-column)
+  - [Foreign Key Constraints](./study_guide/psql_examples.md#foreign-key-constraints)
 
 - [ ] Create an auto-incrementing column
 - [ ] Define a default value for a column
