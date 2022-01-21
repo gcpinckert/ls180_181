@@ -50,7 +50,8 @@ To Do:
 
 ### PostgreSQL
 
-- [ ] Describe what a sequence is and what they are used for
+- [Sequences](./study_guide/sequences.md)
+
 - [ ] Create an auto-incrementing column
 - [ ] Define a default value for a column
 - [ ] Be able to describe what primary, foreign, natural and surrogate keys are
