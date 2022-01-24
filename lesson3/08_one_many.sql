@@ -39,3 +39,8 @@ UNIQUE (number);
 
 INSERT INTO contacts (first_name, last_name, number)
   VALUES ('John', 'Johnson', '6125594874');
+
+/* ERROR:  duplicate key value violates unique constraint "unique_number"
+DETAIL:  Key (number)=(6125594874) already exists. */
+
+/* 6. We need to put "when" in quotes because it represents an SQL keyword. Because the distinguishing of capital vs lowercase is only a convention and in fact SQL is case insensitive, the database has no way of knowing if we mean a column name or the keyword name. Putting when into quotes tells the psql engine that we specifically mean the name of a column. */
