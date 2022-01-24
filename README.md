@@ -63,13 +63,13 @@ To Do:
   - [Primary Keys](./study_guide/keys.md#primary-keys)
   - [Foreign Keys](./study_guide/keys.md#foreign-keys)
 
-- [ ] Create an auto-incrementing column
-- [ ] Define a default value for a column
-- [ ] Be able to describe what primary, foreign, natural and surrogate keys are
-- [ ] Create and remove `CHECK` constraints from a column
-- [ ] Create and remove foreign key constraints from a column
-
 ### Database Diagrams
+
+- [Table Relationships](./study_guide/table_relationships.md)
+  - [Normalization and Database Design](./study_guide/table_relationships.md#normalization-and-database-design)
+  - [One to One Relationship](./study_guide/table_relationships.md#one-to-one)
+  - [One to Many](./study_guide/table_relationships.md#one-to-many)
+  - [Many to Many](./study_guide/table_relationships.md#many-to-many)
 
 - [ ] Talk about the different levels of schema
 - [ ] Define cardinality and modality
