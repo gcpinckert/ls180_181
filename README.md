@@ -56,6 +56,12 @@ To Do:
   - [Auto-incrementing columns](./study_guide/psql_examples.md#make-an-autoincrementing-column)
   - [Default column values](./study_guide/psql_examples.md#define-a-default-value-for-a-column)
   - [Foreign Key Constraints](./study_guide/psql_examples.md#foreign-key-constraints)
+- [Keys](./study_guide/keys.md)
+  - [What are Keys?](./study_guide/keys.md#what-are-keys)
+  - [Natural Keys](./study_guide/keys.md#natural-keys)
+  - [Surrogate Keys](./study_guide/keys.md#surrogate-keys)
+  - [Primary Keys](./study_guide/keys.md#primary-keys)
+  - [Foreign Keys](./study_guide/keys.md#foreign-keys)
 
 - [ ] Create an auto-incrementing column
 - [ ] Define a default value for a column
