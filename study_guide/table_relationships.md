@@ -18,7 +18,7 @@ Relationships between entities are implemented in a database through the use of 
 
 In a one to one relationship between entities, there can be only one instance of each entity on either side of the relationship. These are a bit rare in the real world, but imagine something like a social security number. A person can only have one social security number, and a social security number can only be associated with a single person.
 
-A one-to-one relationship is implemented by associating two _primary key_ columns. Because a primary key must be unique, this constraint ensures that more than one entity instance is not assigned to an entity instance on either side of the relationship. Basically, we use the values from the primary key column of one entity in a column that assigned as _both_ the foreign key and primary key column of another table. 
+A one-to-one relationship is implemented by associating two _primary key_ columns. Because a primary key must be unique, this constraint ensures that more than one entity instance is not assigned to an entity instance on either side of the relationship. Basically, we use the values from the primary key column of one entity in a column that assigned as _both_ the foreign key and primary key column of another table.
 
 ## One to Many
 

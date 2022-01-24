@@ -46,8 +46,6 @@ How to think about data in a relational way, and how to interact with relational
     - [ALL](./study_guide/subqueries.md#all)
     - [EXISTS](./study_guide/subqueries.md#exists)
 
-To Do:
-
 ### PostgreSQL
 
 - [Sequences](./study_guide/sequences.md)
@@ -70,6 +68,9 @@ To Do:
   - [One to One Relationship](./study_guide/table_relationships.md#one-to-one)
   - [One to Many](./study_guide/table_relationships.md#one-to-many)
   - [Many to Many](./study_guide/table_relationships.md#many-to-many)
+- [Levels of Schema](/study_guide/levels_of_schema.md)
+  - [Conceptual Schema](/study_guide/levels_of_schema.md#conceptual-schema)
+  - [Physical Schema](/study_guide/levels_of_schema.md#physical-schema)
 
 - [ ] Talk about the different levels of schema
 - [ ] Define cardinality and modality
