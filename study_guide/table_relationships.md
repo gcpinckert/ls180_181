@@ -20,6 +20,8 @@ In a one to one relationship between entities, there can be only one instance of
 
 A one-to-one relationship is implemented by associating two _primary key_ columns. Because a primary key must be unique, this constraint ensures that more than one entity instance is not assigned to an entity instance on either side of the relationship. Basically, we use the values from the primary key column of one entity in a column that assigned as _both_ the foreign key and primary key column of another table.
 
+Note that one-to-one relationships are rare, and usually running into a one-to-one relationship means that those entities should be stored in the same table or "folded into each other". For example, here, we might include `social security number` as a column in a table called `persons`.
+
 ## One to Many
 
 A one-to-many relationship is one in which a record in one table can be associated with multiple records in another table, but the second record can only accept one association each. For example, a storage unit may contain many items, but an item can only be stored in one storage unit.

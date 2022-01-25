@@ -71,7 +71,5 @@ How to think about data in a relational way, and how to interact with relational
 - [Levels of Schema](/study_guide/levels_of_schema.md)
   - [Conceptual Schema](/study_guide/levels_of_schema.md#conceptual-schema)
   - [Physical Schema](/study_guide/levels_of_schema.md#physical-schema)
-
-- [ ] Talk about the different levels of schema
-- [ ] Define cardinality and modality
-- [ ] Be able to draw database diagrams using crow's foot notation
+- [Cardinality and Modality](./study_guide/cardinality_modality.md)
+  - [Crow's Foot Notation](./study_guide/cardinality_modality.md#crows-foot-notation)
