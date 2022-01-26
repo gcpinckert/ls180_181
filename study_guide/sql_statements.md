@@ -147,6 +147,19 @@ ALTER TABLE table_name
 -- If you didn't provide a name, you can look up what was generated with \d table_name in psql
 ```
 
+To remove or add foreign key constraints:
+
+```sql
+-- Remove a foreign key constraint with the constraint name
+ALTER TABLE parts
+  DROP CONSTRAINT "parts_device_id_fkey";
+
+-- Add a constraint as a table constraint
+ALTER TABLE parts
+  ADD CONSTRAINT "parts_device_id_fkey"
+  FOREIGN KEY (device_id) REFERENCES devices(id) ON DELETE CASCADE;
+```
+
 ## DROP
 
 Using `DROP TABLE` or `DROP COLUMN` completely removes an entire column or an entire table from the database, including any data that may be stored there. This is irreversible and has no warning (i.e., the SQL server will not ask "are you sure?"), so it's a good idea to be _very careful_ about using `DROP`. In general, it's good practice to perform a `SELECT` query first to get a sense of the kind of data you stand to lose.
